@@ -58,3 +58,9 @@ function generateRandomTree() {
 	curve2 = Math.random() * 10;
 	drawTree(centerPointX, canvas.height - 80, len, angle, branchWidth, color1, color2);
 }
+
+generateButton.addEventListener('click', generateRandomTree);
+window.addEventListener('resize', function () {
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+});
